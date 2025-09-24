@@ -1,5 +1,5 @@
-// divide.js
-function divide() {
+// minus.js
+function minus() {
   let a = parseFloat(document.getElementById("a").value);
   let b = parseFloat(document.getElementById("b").value);
 
@@ -8,11 +8,6 @@ function divide() {
     return;
   }
 
-  if (b === 0) {
-    document.getElementById("result").innerText = "Không thể chia cho 0!";
-    return;
-  }
-
-  let result = a / b;
-  document.getElementById("result").innerText = "Kết quả chia: " + result;
+  let result = a - b;
+  document.getElementById("result").innerText = "Kết quả trừ: " + result;
 }
